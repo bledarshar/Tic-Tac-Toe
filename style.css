@@ -1,0 +1,28 @@
+.board{
+    width :100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    justify-content: center;
+    align-content: center;
+}
+
+
+.cells{
+border: 1px solid black;
+width: 100px;   
+height: 100px;
+
+}
+.cells:nth-child(1),.cells:nth-child(2),.cells:nth-child(3){
+    border-top:none ;
+}
+.cells:nth-child(7),.cells:nth-child(8),.cells:nth-child(9){
+    border-bottom: none;
+}
+.cells:nth-child(1),.cells:nth-child(4),.cells:nth-child(7){
+    border-left: none ;
+}
+.cells:nth-child(3),.cells:nth-child(6),.cells:nth-child(9) {
+border-right:none ;
+}
